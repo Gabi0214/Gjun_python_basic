@@ -46,6 +46,9 @@ if __name__ == '__main__':
     duck_2.make_some_noise()
     print(duck_2.sound)
 
+    goose_1 = Goose("White", "Ga")
+    print(goose_1.sound)
+
 
 
 
