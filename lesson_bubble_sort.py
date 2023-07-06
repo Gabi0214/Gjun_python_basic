@@ -1,4 +1,4 @@
-import numpy as np 
+import numpy as np
 n = 6
 bubbles = np.random.choice(10, n, replace=False)
 print(list(bubbles))

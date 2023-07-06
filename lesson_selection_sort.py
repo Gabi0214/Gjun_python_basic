@@ -6,19 +6,26 @@
 
 import numpy as np
 N = 5
-numbers = np.random.choice(100, N)
-print(numbers)
+numbers = np.random.choice(100, N, replace=False)
+print("Before: ", numbers)
 
 
 for round in range(N): #第0 ~ 4輪
+    #預設每一輪的最小值
     round_minimum = numbers[round]
     round_minimum_index = round
-    for index in range(round, N):
+   
+   #找最小值
+   for index in range(round, N):
         if numbers[index] < round_minimum:
-            round_minimum = numbers[index]
             round_minimum_index = index
+            round_minimum = numbers[index]
     # 交換
     if round != round_minimum_index:
         numbers[round], numbers[round_minimum_index] = numbers[round_minimum_index], numbers[round]
+    return numbers
+print("After:  ",numbers)
 
-print("After: ",numbers)
+def selection_sort(numbers):
+
+if __name__=='__main__':

@@ -18,12 +18,11 @@
 
 # else 的簡易範例
 
-# sum=0
-
-# for n in range(11):
-#     sum+=n
-# else:
-#     print(sum) # 印出 1+2+...+10
+sum=0
+for n in range(11):
+    sum+=n
+else:
+    print(sum) # 印出 1+2+...+10
 
 # 綜合範例: 找出整數平方根
 #輸入 9 得到 3
