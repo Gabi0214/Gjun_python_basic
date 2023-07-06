@@ -4,7 +4,17 @@ bubbles = np.random.choice(10, n, replace=False)
 print(list(bubbles))
 
 # n = 6
-# r0:max_idx5, r1:max_idx4, r2:max_idx3, r3:max_idx2 ==> r + max_idx = 5, idx <= n - 1 - r
+# round 0:
+#   idx: 1~5,
+# round 1:
+#   idx: 1~4,
+# round 2:
+#   idx: 1~3,
+# round 3:
+#   idx: 1~2,
+# round 4:
+#   idx: 1~1
+# round + idx <= 5, idx <= 5 - round, idx <= n - 1 - round
 # Time Complexity = O(n**2)
 for round, _ in enumerate(bubbles):
     for index, _ in enumerate(bubbles):
