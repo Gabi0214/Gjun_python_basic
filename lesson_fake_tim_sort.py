@@ -17,17 +17,17 @@ def fake_timsort(numbers):
 
 
 if __name__ == '__main__':
-    N = 10 ** 3
+    N = 5 * 10 ** 4
     numbers = np.random.choice(10 ** 5, N, replace=False).tolist()
 
-    start = time.time_ns()
+    start = time.perf_counter()
     insertion_sort(numbers)
-    print("Insertion sort time:", time.time_ns() - start)
+    print("Insertion sort time: ", time.perf_counter() - start)
 
     start = time.time_ns()
     merge_sort(numbers)
-    print("Merge sort time:", time.time_ns() - start)
+    print("Merge sort time: ", time.perf_counter() - start)
 
     start = time.time_ns()
     fake_timsort(numbers)
-    print("Fake tim sort time:", time.time_ns() - start)
+    print("Fake tim sort time: ", time.perf_counter() - start)
