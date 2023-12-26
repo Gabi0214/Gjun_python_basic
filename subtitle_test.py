@@ -19,7 +19,7 @@ def generate_subtitles(audio_file_path):
 
 if __name__ == "__main__":
      # 替換為實際的音訊檔案路徑
-    audio_file_path = r"C:\Users\閻佳章\Downloads\cn52000_7311285702925356293.mp4"
+    audio_file_path = r"C:\Users\閻佳章\Downloads\cn52000_7311285702925356293.mp4-vocals.mp3"
 
     subtitles = generate_subtitles(audio_file_path)
 
