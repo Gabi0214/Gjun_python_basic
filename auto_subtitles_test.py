@@ -35,7 +35,7 @@ def generate_subtitles(audio_file_path, output_subtitle_path):
 
 
 # 指定输入音频文件路径和输出字幕檔路径
-audio_file_path = "./TheStarrySkyofTheEyes_Vocal.wav"
+audio_file_path = "./ScrambledEggsFriedShrimps-vocals.mp3"
 output_subtitle_path = "./subtitles.srt"
 
 # 生成字幕檔
