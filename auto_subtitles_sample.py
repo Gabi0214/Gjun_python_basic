@@ -7,7 +7,7 @@ import tempfile
 import os
 
 
-def split_audio_with_vad(audio_file_path, silence_threshold=-24):
+def split_audio_with_vad(audio_file_path, silence_threshold=-36):
     audio = AudioSegment.from_file(audio_file_path, format="wav")
 
     # 使用 pydub.silence.split_on_silence 方法進行 VAD 分割
